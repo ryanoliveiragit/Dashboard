@@ -15,24 +15,11 @@ import {
   TodaysSales,
   ContainerSales,
   Users,
-  PieChartContainer, // Adicione o novo contêiner
 } from "./styles";
-import { PieChart, Pie, Cell } from "recharts";
+import { PieGraphic } from "./graphics/pie";
+import { TinyBar } from "./graphics/tinyBar";
 
 export const Dashboard = () => {
-  const COLORS = ["#497AF9", "#789DFB", "#E5E5E5"];
-  const data = [
-    { name: "New", value: 62 },
-    { name: "Returning", value: 13 },
-    { name: "Inactive", value: 23 },
-  ];
-
-  // Define the onMouseEnter event handler for the PieChart component
-  const onPieEnter = (data: any, index: any) => {
-    // Your logic for handling the onMouseEnter event goes here
-    console.log("Mouse entered the PieChart!", data, index);
-  };
-
   return (
     <Container>
       <Header>
@@ -49,7 +36,6 @@ export const Dashboard = () => {
       </Header>
       <ContainerDashboard>
         <GridContainer>
-          {/* Primeira coluna */}
           <GridItem className="today">
             <TodaysSales>
               <header>
@@ -86,50 +72,19 @@ export const Dashboard = () => {
           </GridItem>
           <GridItem className="pie">
             <Users>
-            <header>
+              <header>
                 <h1>Users</h1>
                 <h2>4.209</h2>
               </header>
-              </Users>
-              <PieChartContainer>
-                <ul>
-                  <li>
-                    <div className="blue">.</div>
-                    62% New
-                  </li>
-                  <li>
-                    <div className="blueLight">.</div>
-                    13% Returning
-                  </li>
-                  <li>
-                    <div className="gray">.</div>
-                    23% Inactive
-                  </li>
-                </ul>
-                <PieChart width={185} height={186} onMouseEnter={onPieEnter}>
-                  <Pie
-                    data={data}
-                    innerRadius={40}
-                    outerRadius={80}
-                    paddingAngle={5}
-                    dataKey="value"
-                  >
-                    {data.map((_, index) => (
-                      <Cell
-                        key={`cell-${index}`}
-                        fill={COLORS[index % COLORS.length]}
-                      />
-                    ))}
-                  </Pie>
-                </PieChart>
-              </PieChartContainer>
+            </Users>
+            <PieGraphic />
           </GridItem>
 
-          {/* Segunda coluna */}
-          <GridItem>Item 3</GridItem>
+          <GridItem>
+            <TinyBar />
+          </GridItem>
           <GridItem>Item 4</GridItem>
 
-          {/* Terceira coluna */}
           <GridItem>Item 5</GridItem>
         </GridContainer>
       </ContainerDashboard>

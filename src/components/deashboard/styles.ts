@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const Container = styled.div`
   background-color: ${(props) => props.theme.background};
   width: 100%;
+  margin-left: 20rem;
 `;
 export const ContainerDashboard = styled.div`
   width: 100%;
@@ -219,3 +220,11 @@ padding: 1rem 2rem;
     }
   }
 `;
+
+export const TinyBarContainer = styled.section`
+    ul {
+        display: flex;
+        background-color: white;
+    }
+    width: 100%;
+    height: 25rem;`
