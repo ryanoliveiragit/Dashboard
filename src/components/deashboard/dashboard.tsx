@@ -1,4 +1,3 @@
-import React from "react";
 import { BsBell } from "react-icons/bs";
 import { BiExport } from "react-icons/bi";
 import sold from "../../assets/sold.svg";
@@ -115,7 +114,7 @@ export const Dashboard = () => {
                     paddingAngle={5}
                     dataKey="value"
                   >
-                    {data.map((entry, index) => (
+                    {data.map((_, index) => (
                       <Cell
                         key={`cell-${index}`}
                         fill={COLORS[index % COLORS.length]}
