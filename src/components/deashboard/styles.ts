@@ -190,6 +190,9 @@ export const ContainerSales = styled.div`
     padding: 1.25rem;
     gap: 8px;
     background-color: blue;
+    @media (max-width: 1550px) {
+    width: 15.5rem;
+  }
   }
   img {
     width: 40px;
