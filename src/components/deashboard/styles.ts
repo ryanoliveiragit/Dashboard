@@ -190,7 +190,7 @@ export const ContainerSales = styled.div`
     gap: 8px;
     background-color: blue;
     @media (max-width: 1550px) {
-    width: 6rem;
+   
   }
   }
   img {
