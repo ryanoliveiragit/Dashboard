@@ -49,6 +49,7 @@ export const VerticalComposed = () => {
   return (
     <ContainerVerticalComposed>
       <TableContainer>
+        <h1>Top products</h1>
         <TableRow className="header">
           <TableCell className="id">
             <ul>

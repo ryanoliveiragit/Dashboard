@@ -60,7 +60,7 @@ export const GridContainer = styled.div`
 
   @media (max-width: 1285px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
   }
 `;
 export const VerticalContainer = styled.div`
@@ -190,8 +190,7 @@ export const ContainerSales = styled.div`
     gap: 8px;
     background-color: blue;
     @media (max-width: 1550px) {
-   
-  }
+    }
   }
   img {
     width: 40px;
@@ -202,7 +201,7 @@ export const ContainerSales = styled.div`
     font-weight: 600;
     line-height: 32px;
     @media (max-width: 1550px) {
-        font-size: 1rem;
+      font-size: 1rem;
     }
   }
   span {
@@ -211,7 +210,7 @@ export const ContainerSales = styled.div`
     line-height: 24px;
     color: ${(props) => props.theme["grey200"]};
     @media (max-width: 1550px) {
-        font-size: .75rem;
+      font-size: 0.75rem;
     }
   }
   p {
@@ -220,7 +219,7 @@ export const ContainerSales = styled.div`
     line-height: 15px;
     color: ${(props) => props.theme["blue50"]};
     @media (max-width: 1550px) {
-        font-size: .60rem;
+      font-size: 0.6rem;
     }
   }
 `;
@@ -402,6 +401,14 @@ export const ContainerIcons = styled.div`
 export const TableContainer = styled.div`
   border-collapse: collapse;
   margin: 1rem;
+  h1 {
+    padding: 1rem 3rem;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--primary-dark-shade, #05004e);
+    line-height: 32px;
+  }
   .header {
     color: #96a5b8;
     padding: 2rem 0rem;
@@ -452,9 +459,9 @@ export const TableCell = styled.div`
     }
     @media (max-width: 1550px) {
       li {
-      font-size: 10px;
+        font-size: 10px;
+      }
     }
-  }
   }
   width: 100%;
   align-items: center;
@@ -463,7 +470,6 @@ export const TableCell = styled.div`
   justify-content: center;
   display: flex;
   flex-direction: column;
-
 `;
 export const ButtonSales = styled.button`
   width: 86.589px;
