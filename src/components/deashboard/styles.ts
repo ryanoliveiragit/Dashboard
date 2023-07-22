@@ -57,6 +57,11 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
+
+  @media (max-width: 1285px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; 
+  }
 `;
 export const VerticalContainer = styled.div`
   margin-top: 2rem;
@@ -384,7 +389,6 @@ export const ContainerIcons = styled.div`
 `;
 
 export const TableContainer = styled.div`
-  width: 97%;
   border-collapse: collapse;
   margin: 1rem;
   .header {
@@ -447,12 +451,15 @@ export const TableRow = styled.div`
     width: 17%;
   }
   display: flex;
-  height: 13rem;
+  height: 100%;
   padding: 0.5rem;
 `;
 
 export const TableCell = styled.div`
   width: 100%;
+  @media (max-width: 1550px) {
+    gap: 1.5rem;
+  }
   .transparent {
     display: none;
   }
@@ -462,11 +469,16 @@ export const TableCell = styled.div`
     list-style: none;
     justify-content: space-between;
     li {
-      font-size: 14px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 400;
       line-height: 20px;
     }
+    @media (max-width: 1550px) {
+      li {
+      font-size: 10px;
+    }
+  }
   }
   width: 100%;
   align-items: center;
@@ -475,6 +487,7 @@ export const TableCell = styled.div`
   justify-content: center;
   display: flex;
   flex-direction: column;
+
 `;
 export const ButtonSales = styled.button`
   width: 86.589px;

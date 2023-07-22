@@ -4,8 +4,14 @@ export const ContainerHeader = styled.header`
   background-color: ${(props) => props.theme.grey300};
   padding: 3rem 2rem;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 20.5rem;
+  @media (max-width: 1550px) {
+    width: 15.5rem;
+    svg {
+      max-width: 15px;
+    }
+  }
   h1 {
     color: ${(props) => props.theme.grey900};
   }
@@ -22,19 +28,26 @@ export const ContainerHeader = styled.header`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    @media (max-width: 1550px) {
+      gap: .2rem;
+      li {
+        font-size: .5rem;
+      }
+  }
   }
   li {
     color: ${(props) => props.theme.grey700};;
     font-weight: 400;
     display: flex;
-    width: 252px;
     padding: 0.75rem 1.25rem;
     align-items: center;
     gap: 24px;
     flex-shrink: 0;
-
-    font-size: 14px;
+    font-size: .85rem;
     line-height: normal;
+    @media (max-width: 1550px) {
+      padding: 1rem 1.25rem;
+  }
   }
   .select {
     svg {
@@ -46,10 +59,13 @@ export const ContainerHeader = styled.header`
     border-radius: 16px;
     background-color: ${(props) => props.theme.purple};
     box-shadow: 0px 20px 50px 0px rgba(55, 69, 87, 0.1);
+    @media (max-width: 1550px) {
+      padding: .5rem 1.25rem;
+  }
   }
   button {
     color: ${(props) => props.theme.red100};;;
-    margin-left: 2rem;
+    margin-left: 1.1rem;
     margin-top: 2rem;
     font-size: 18px;
     display: flex;
@@ -58,6 +74,9 @@ export const ContainerHeader = styled.header`
     gap: 1.5rem;
     background-color: transparent;
     cursor: pointer;
+    @media (max-width: 1550px) {
+      font-size: .5rem;
+  }
   }
 `;
 export const LogoContainer = styled.div`
