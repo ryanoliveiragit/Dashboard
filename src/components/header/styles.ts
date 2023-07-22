@@ -6,6 +6,7 @@ export const ContainerHeader = styled.header`
   position: fixed;
   height: 100%;
   width: 20.5rem;
+  z-index: 3;
   @media (max-width: 1550px) {
     width: 15.5rem;
     svg {

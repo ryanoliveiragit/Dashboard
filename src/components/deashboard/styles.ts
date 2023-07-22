@@ -70,7 +70,6 @@ export const VerticalContainer = styled.div`
   border: 1px solid #f8f9fa;
   border-radius: 20px;
   box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.5);
-  width: 100%;
 `;
 export const GridItem = styled.div`
   background-color: ${(props) => props.theme.white};
@@ -191,7 +190,7 @@ export const ContainerSales = styled.div`
     gap: 8px;
     background-color: blue;
     @media (max-width: 1550px) {
-    width: 10rem;
+    width: 4rem;
   }
   }
   img {
@@ -224,7 +223,6 @@ export const ContainerSales = styled.div`
         font-size: .60rem;
     }
   }
-  
 `;
 
 export const Users = styled.div`
