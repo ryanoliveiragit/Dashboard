@@ -29,9 +29,9 @@ export const ContainerHeader = styled.header`
     flex-direction: column;
     gap: 2rem;
     @media (max-width: 1550px) {
-      gap: .2rem;
+      gap: 1rem;
       li {
-        font-size: .5rem;
+        font-size: .75rem;
       }
   }
   }
@@ -75,7 +75,7 @@ export const ContainerHeader = styled.header`
     background-color: transparent;
     cursor: pointer;
     @media (max-width: 1550px) {
-      font-size: .5rem;
+      font-size: .75rem;
   }
   }
 `;
