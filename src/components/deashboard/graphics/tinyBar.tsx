@@ -59,7 +59,6 @@ export const TinyBar = () => {
       <TinyBarContainer>
         <ResponsiveContainer>
           <BarChart data={data}>
-            <Tooltip />
             <Bar dataKey="uv" fill="#4AB58E" />
             <Bar dataKey="amt" fill="#FFCF00" />
           </BarChart>
