@@ -199,19 +199,29 @@ export const ContainerSales = styled.div`
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 32px;
+    @media (max-width: 1550px) {
+        font-size: 1rem;
+    }
   }
   span {
     font-size: 1rem;
     font-weight: 500;
     line-height: 24px;
     color: ${(props) => props.theme["grey200"]};
+    @media (max-width: 1550px) {
+        font-size: .75rem;
+    }
   }
   p {
     font-size: 0.75rem;
     font-weight: 500;
     line-height: 15px;
     color: ${(props) => props.theme["blue50"]};
+    @media (max-width: 1550px) {
+        font-size: .60rem;
+    }
   }
+  
 `;
 
 export const Users = styled.div`
