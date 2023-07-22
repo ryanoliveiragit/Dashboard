@@ -78,7 +78,7 @@ export const TinyBar = () => {
       <TotalTinyBar>
         <section>
           <Logo>
-            <RealityLogo/>
+            <RealityLogo />
             <div>
               <h1>Reality Sales</h1>
               <p>Global</p>

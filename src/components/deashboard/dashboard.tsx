@@ -82,7 +82,6 @@ export const Dashboard = () => {
             </Users>
             <PieGraphic />
           </GridItem>
-
           <GridItem>
             <TinyBar />
           </GridItem>
@@ -91,8 +90,8 @@ export const Dashboard = () => {
           </GridItem>
         </GridContainer>
         <VerticalContainer>
-            <VerticalComposed />
-          </VerticalContainer>
+          <VerticalComposed />
+        </VerticalContainer>
       </ContainerDashboard>
     </Container>
   );
