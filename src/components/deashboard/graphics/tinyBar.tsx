@@ -1,4 +1,4 @@
-import { BarChart, Bar, ResponsiveContainer, Tooltip } from "recharts";
+import { BarChart, Bar, ResponsiveContainer } from "recharts";
 import { TinyBarContainer, Logo, ContainerAll, TotalTinyBar } from "../styles";
 import { RealityLogo, TargetLogo } from "../../../utils/logo";
 
