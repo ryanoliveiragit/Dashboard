@@ -401,41 +401,6 @@ export const TableContainer = styled.div`
 `;
 export const ContainerVerticalComposed = styled.div`
   width: 100%;
-  .firstDivider {
-    margin-top: 8.5rem;
-    width: 75%;
-    margin-left: 1rem;
-    border-bottom: 1px solid #edf2f6;
-    position: absolute;
-  }
-  .twoDivider {
-    margin-left: 1rem;
-    margin-top: 11.8rem;
-    width: 75%;
-    border-bottom: 1px solid #edf2f6;
-    position: absolute;
-  }
-  .treeDivider {
-    margin-top: 15rem;
-    width: 75%;
-    margin-left: 1rem;
-    border-bottom: 1px solid #edf2f6;
-    position: absolute;
-  }
-  .forivider {
-    margin-top: 18.5rem;
-    width: 75%;
-    margin-left: 1rem;
-    border-bottom: 1px solid #edf2f6;
-    position: absolute;
-  }
-  .fiveDivider {
-    margin-top: 22rem;
-    width: 75%;
-    margin-left: 1rem;
-    border-bottom: 1px solid #edf2f6;
-    position: absolute;
-  }
 `;
 export const TableRow = styled.div`
   .id {
