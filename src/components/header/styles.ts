@@ -29,7 +29,7 @@ export const ContainerHeader = styled.header`
     flex-direction: column;
     gap: 2rem;
     @media (max-width: 1550px) {
-      gap: 1rem;
+      gap: .5rem;
       li {
         font-size: .75rem;
       }
