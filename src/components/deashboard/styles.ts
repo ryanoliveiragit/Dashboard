@@ -58,7 +58,15 @@ export const GridContainer = styled.div`
   grid-template-columns: 2fr 1fr;
   gap: 20px;
 `;
-
+export const VerticalContainer = styled.div`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: ${(props) => props.theme.white};
+  border: 1px solid #f8f9fa;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px 0px rgba(238, 238, 238, 0.5);
+  width: 100%;
+`;
 export const GridItem = styled.div`
   background-color: ${(props) => props.theme.white};
   border: 1px solid #f8f9fa;
@@ -320,4 +328,164 @@ export const Logo = styled.div`
   display: flex;
   gap: 0.5rem;
   flex-direction: row;
+`;
+export const ContainerArea = styled.div`
+  hr {
+    opacity: 0.2;
+    margin-top: 6rem;
+  }
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  h1 {
+    font-size: 20px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    line-height: 32px;
+    color: ${(props) => props.theme.grey900};
+  }
+  section {
+    padding-top: 3rem;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+  }
+`;
+export const ContainerIcons = styled.div`
+  .fisrt {
+    padding-right: 3rem;
+    border-right: 1px solid #bdc9d3;
+    height: 50%;
+  }
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 1rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+    }
+    h1 {
+      color: #96a5b8;
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+`;
+
+export const TableContainer = styled.div`
+  width: 97%;
+  border-collapse: collapse;
+  margin: 1rem;
+  .header {
+    color: #96a5b8;
+    padding: 2rem 0rem;
+    margin-bottom: 1rem;
+    height: 1rem;
+    border-bottom: 1px solid #edf2f6;
+  }
+`;
+export const ContainerVerticalComposed = styled.div`
+  width: 100%;
+  .firstDivider {
+    margin-top: 8.5rem;
+    width: 75%;
+    margin-left: 1rem;
+    border-bottom: 1px solid #edf2f6;
+    position: absolute;
+  }
+  .twoDivider {
+    margin-left: 1rem;
+    margin-top: 11.8rem;
+    width: 75%;
+    border-bottom: 1px solid #edf2f6;
+    position: absolute;
+  }
+  .treeDivider {
+    margin-top: 15rem;
+    width: 75%;
+    margin-left: 1rem;
+    border-bottom: 1px solid #edf2f6;
+    position: absolute;
+  }
+  .forivider {
+    margin-top: 18.5rem;
+    width: 75%;
+    margin-left: 1rem;
+    border-bottom: 1px solid #edf2f6;
+    position: absolute;
+  }
+  .fiveDivider {
+    margin-top: 22rem;
+    width: 75%;
+    margin-left: 1rem;
+    border-bottom: 1px solid #edf2f6;
+    position: absolute;
+  }
+`;
+export const TableRow = styled.div`
+  .id {
+    width: 20%;
+  }
+  .name {
+    width: 40%;
+  }
+  .data {
+    width: 100%;
+  }
+  .sales {
+    width: 17%;
+  }
+  display: flex;
+  height: 13rem;
+  padding: 0.5rem;
+`;
+
+export const TableCell = styled.div`
+  width: 100%;
+  .transparent {
+    display: none;
+  }
+  ul {
+    width: 100%;
+    padding-left: 3rem;
+    list-style: none;
+    justify-content: space-between;
+    li {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+  width: 100%;
+  align-items: center;
+  gap: 2.2rem;
+  text-align: start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+`;
+export const ButtonSales = styled.button`
+  width: 86.589px;
+  height: 1.5rem;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #884dff;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #884dff;
+  background: var(--supporting-color-violet-shade, #fbf1ff);
 `;

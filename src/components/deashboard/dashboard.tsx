@@ -15,9 +15,12 @@ import {
   TodaysSales,
   ContainerSales,
   Users,
+  VerticalContainer,
 } from "./styles";
 import { PieGraphic } from "./graphics/pie";
 import { TinyBar } from "./graphics/tinyBar";
+import { AreaGraph } from "./graphics/area";
+import { VerticalComposed } from "./graphics/verticalComposed";
 
 export const Dashboard = () => {
   return (
@@ -83,10 +86,13 @@ export const Dashboard = () => {
           <GridItem>
             <TinyBar />
           </GridItem>
-          <GridItem>Item 4</GridItem>
-
-          <GridItem>Item 5</GridItem>
+          <GridItem>
+            <AreaGraph />
+          </GridItem>
         </GridContainer>
+        <VerticalContainer>
+            <VerticalComposed />
+          </VerticalContainer>
       </ContainerDashboard>
     </Container>
   );

@@ -1,4 +1,4 @@
-import { BarChart, Bar, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, ResponsiveContainer, Tooltip } from "recharts";
 import { TinyBarContainer, Logo, ContainerAll, TotalTinyBar } from "../styles";
 import { RealityLogo, TargetLogo } from "../../../utils/logo";
 
@@ -59,6 +59,7 @@ export const TinyBar = () => {
       <TinyBarContainer>
         <ResponsiveContainer>
           <BarChart data={data}>
+            <Tooltip />
             <Bar dataKey="uv" fill="#4AB58E" />
             <Bar dataKey="amt" fill="#FFCF00" />
           </BarChart>

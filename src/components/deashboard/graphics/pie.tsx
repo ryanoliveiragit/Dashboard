@@ -1,4 +1,4 @@
-import { PieChart, Pie, Cell } from "recharts";
+import { PieChart, Pie, Cell, Tooltip } from "recharts";
 import { PieChartContainer } from "../styles";
 
 const COLORS = ["#497AF9", "#789DFB", "#E5E5E5"];
@@ -31,6 +31,7 @@ export const PieGraphic = () => {
         </li>
       </ul>
       <PieChart width={185} height={186} onMouseEnter={onPieEnter}>
+        <Tooltip />
         <Pie
           data={data}
           innerRadius={40}
