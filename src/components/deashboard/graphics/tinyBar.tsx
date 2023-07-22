@@ -1,5 +1,6 @@
 import { BarChart, Bar, ResponsiveContainer } from "recharts";
-import { TinyBarContainer } from "../styles";
+import { TinyBarContainer, Logo, ContainerAll, TotalTinyBar } from "../styles";
+import { RealityLogo, TargetLogo } from "../../../utils/logo";
 
 const data = [
   {
@@ -54,22 +55,47 @@ const data = [
 
 export const TinyBar = () => {
   return (
-    <TinyBarContainer>
-      <ResponsiveContainer>
-        <BarChart width={25} height={50} data={data}>
-          <Bar dataKey="uv" fill="#4AB58E" />
-          <Bar dataKey="amt" fill="#FFCF00" />
-        </BarChart>
-      </ResponsiveContainer>
+    <ContainerAll>
+      <TinyBarContainer>
+        <ResponsiveContainer>
+          <BarChart data={data}>
+            <Bar dataKey="uv" fill="#4AB58E" />
+            <Bar dataKey="amt" fill="#FFCF00" />
+          </BarChart>
+        </ResponsiveContainer>
+      </TinyBarContainer>
       <ul>
-        <li>Jan</li>
-        <li>Jan</li>
-        <li>Jan</li>
-        <li>Jan</li>
-        <li>Jan</li>
-        <li>Jan</li>
-        <li>Jan</li>
+        <li className="Jan">Jan</li>
+        <li className="Feb">Feb</li>
+        <li className="Mar">Mar</li>
+        <li className="Apr">Apr</li>
+        <li className="May">May</li>
+        <li className="June">June</li>
+        <li className="July">July</li>
+        <li className="Ago">Ago</li>
       </ul>
-    </TinyBarContainer>
+      <TotalTinyBar>
+        <section>
+          <Logo>
+            <RealityLogo/>
+            <div>
+              <h1>Reality Sales</h1>
+              <p>Global</p>
+            </div>
+          </Logo>
+          <span className="green">8.823</span>
+        </section>
+        <section>
+          <Logo className="fixed">
+            <TargetLogo />
+            <div>
+              <h1>Target Sales</h1>
+              <p>Commercial</p>
+            </div>
+          </Logo>
+          <span className="yellow">12.122</span>
+        </section>
+      </TotalTinyBar>
+    </ContainerAll>
   );
 };

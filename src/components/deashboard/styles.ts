@@ -202,7 +202,7 @@ export const ContainerSales = styled.div`
 `;
 
 export const Users = styled.div`
-padding: 1rem 2rem;
+  padding: 1rem 2rem;
   header {
     h1 {
       color: ${(props) => props.theme.grey900};
@@ -212,19 +212,112 @@ padding: 1rem 2rem;
       font-size: 1.25rem;
     }
     h2 {
-        color: ${(props) => props.theme.grey850};
+      color: ${(props) => props.theme.grey850};
       font-style: normal;
       font-weight: 500;
       line-height: 20px;
-      font-size: .85rem;
+      font-size: 0.85rem;
     }
   }
 `;
 
 export const TinyBarContainer = styled.section`
-    ul {
-        display: flex;
-        background-color: white;
-    }
+  width: 30%;
+  ul {
+    z-index: 2;
+    list-style-type: none;
+    padding: 1rem;
+    background-color: ${(props) => props.theme.white};
+    display: flex;
+    background-color: white;
+  }
+  width: 100%;
+  height: 25rem;
+`;
+
+export const ContainerAll = styled.div`
+  ul {
+    padding: 1rem 0rem;
     width: 100%;
-    height: 25rem;`
+    justify-content: space-between;
+
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    li {
+      position: absolute;
+      font-size: 0.6rem;
+      color: ${(props) => props.theme.grey100};
+      margin: 0rem 2rem;
+    }
+    .Jan {
+      margin-left: 3rem;
+      text-align: center;
+    }
+    .Feb {
+      left: 15%;
+    }
+    .Mar {
+      left: 27%;
+    }
+    .Apr {
+      left: 39%;
+    }
+    .May {
+      left: 51%;
+    }
+    .June {
+      left: 64%;
+    }
+    .July {
+      left: 76%;
+    }
+    .Ago {
+      left: 89%;
+    }
+  }
+`;
+
+export const TotalTinyBar = styled.section`
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  section {
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    span {
+      font-weight: 500;
+      line-height: 20px;
+      font-size: 14px;
+    }
+    .green {
+      color: #27ae60;
+    }
+    .yellow {
+      color: #ffa412;
+    }
+    div {
+      h1 {
+        color: ${(props) => props.theme.grey900};
+        font-size: 12px;
+      }
+      p {
+        color: ${(props) => props.theme.grey700};
+        font-size: 10px;
+      }
+    }
+    .fixed {
+      gap: 35px;
+    }
+  }
+`;
+export const Logo = styled.div`
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+`;
