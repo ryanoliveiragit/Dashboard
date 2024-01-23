@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>
+  <a href="https://dashboard-eight-ruddy.vercel.app">Projeto</a>
 </p>
 
 <br>
